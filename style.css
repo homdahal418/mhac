@@ -1,0 +1,683 @@
+/* style.css */
+body {
+    font-family: "Raleway", sans-serif, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+}
+/* google translate */
+#google_translate_element {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+}
+.goog-te-banner-frame.skiptranslate {
+    display: none !important;
+}
+
+/* Hide the Google Translate toolbar */
+body {
+    top: 0px !important;
+}
+
+/* Hide the Google Translate logo */
+.goog-logo-link {
+    display: none !important;
+}
+
+/* Hide the Google Translate branding */
+.goog-te-gadget {
+    color: transparent !important;
+}
+/* google translate end */
+
+
+
+/* container */
+.three-columns-grid {
+    display: grid;
+    max-width: 1200px;
+    margin: auto;
+    grid-template-columns: 20% 1fr 1fr;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+/* container end */
+
+/* Headers start */
+.edu-level-header {
+    background-color: #f7974c;
+    display: flex;
+    /* Use flexbox */
+    justify-content: center;
+    /* Horizontal center */
+    align-items: center;
+    /* Vertical center */
+    min-height: 30px;
+    /* Minimum height for small devices */
+    text-align: center;
+    /* Keep text centered */
+    border-top-left-radius: 10px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+.certificate-header {
+    background-color: #f7974c;
+    display: flex;
+    /* Use flexbox */
+    justify-content: center;
+    /* Horizontal center */
+    align-items: center;
+    /* Vertical center */
+    min-height: 30px;
+    /* Minimum height for small devices */
+    text-align: center;
+    /* Keep text centered */
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+.career-header {
+    background-color: #f7974c;
+    display: flex;
+    /* Use flexbox */
+    justify-content: center;
+    /* Horizontal center */
+    align-items: center;
+    /* Vertical center */
+    min-height: 30px;
+    /* Minimum height for small devices */
+    text-align: center;
+    /* Keep text centered */
+    border-top-right-radius: 10px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Headers end */
+
+/* columns start */
+.three-columns-grid>* {
+    padding: 1rem;
+}
+
+/* columns end */
+
+/* Doctoral */
+.edu-level-doctoral-degree,
+.certificate-col-doctoral-row,
+.career-col-doctoral-row,
+.edu-level-masters-degree,
+.certificate-col-masters-row,
+.career-col-masters-row,
+.edu-level-bachelors-degree,
+.certificate-col-bachelors-row,
+.career-col-bachelors-row,
+.edu-level-associate-degree,
+.edu-level-certificate,
+.certificate-col-associates-row,
+.certificate-col-certificate-row,
+.career-col-associates-row,
+.career-col-certificate-row,
+.edu-level-high-school,
+.certificate-col-highschool-row,
+.career-col-highschool-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    text-align: center;
+    height: 100%;
+    margin-bottom: 20px;
+}
+
+
+
+
+/* Background colors for education levels */
+.edu-level-doctoral-degree {
+    background-color: #b2e59d;
+    color: #000000;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+.edu-level-masters-degree {
+    background-color: #b2e59d;
+    /* Soft green */
+    color: #000000;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+.edu-level-bachelors-degree {
+    background-color: #b2e59d;
+    /* Warm orange */
+    color: #000000;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+   
+}
+
+.edu-level-associate-degree {
+    background-color: #b2e59d;
+    /* Soft purple */
+    color: #000000;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+   
+}
+
+.edu-level-certificate {
+    background-color: #b2e59d;
+    /* Soft red */
+    color: #000000;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+   
+}
+
+.edu-level-high-school {
+    background-color: #b2e59d;
+    /* Sky blue */
+    color: #000000;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+   
+}
+
+/* Background colors for certificates */
+
+.certificate-col-highschool-row {
+    background-color: #ededed;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+   
+    /* Light shadow */
+}
+
+.certificate-col-certificate-row {
+    background-color: #ededed;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+   
+    /* Light shadow */
+}
+
+.certificate-col-associates-row {
+    background-color: #ededed;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+   
+    /* Light shadow */
+}
+
+.certificate-col-bachelors-row {
+    background-color: #ededed;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+   
+    /* Light shadow */
+    /* Light gray background */
+}
+
+.certificate-col-masters-row {
+    background-color: #ededed;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+   
+    /* Light shadow */
+}
+
+.certificate-col-doctoral-row {
+    background-color: #ededed;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+    /* Light shadow */
+}
+
+/* Background colors for careers */
+
+
+.career-col-highschool-row {
+    background-color: #f6f6f6;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+    /* Your base color */
+   
+    /* Light shadow */
+}
+
+.career-col-certificate-row {
+    background-color: #f6f6f6;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+    /* Your base color */
+   
+    /* Light shadow */
+}
+
+.career-col-associates-row {
+    background-color: #f6f6f6;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+    /* Your base color */
+   
+    /* Light shadow */
+}
+
+.career-col-bachelors-row {
+    background-color: #f6f6f6;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2); /* Shadow around the element */
+    /* Your base color */
+   
+    /* Light shadow */
+}
+
+.career-col-masters-row {
+    background-color: #f6f6f6;
+    /* Your base color */
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2); /* Shadow around the element */
+   
+    /* Light shadow */
+}
+
+.career-col-doctoral-row {
+    background-color: #f6f6f6;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2); /* Shadow around the element */
+  
+}
+
+
+
+.edu-level-six-year-college,
+.certificate-col-six-year-row,
+.career-col-six-year-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    text-align: center;
+    height: 100%;
+    margin-bottom: 20px;
+}
+
+
+.career-col-highschool-row {
+    border-bottom-right-radius: 10px;
+}
+
+.credential,
+.career {
+    flex: 1;
+    /* margin: 0 10px; */
+    /* width: 100%; */
+    /* pointer-events: none; */
+}
+
+/* Remove list-style and add styling for credential and career items */
+.credential ul,
+.career ul {
+    list-style-type: none;
+    padding: 0;
+    padding-left: 0;
+    margin: 0;
+    /* width: 100%; */
+}
+
+/* List items styling */
+.credential,
+.career {
+    text-align: left;
+    padding-left: 10px;
+}
+
+.credential li,
+.career li {
+    text-align: left;
+    padding: 8px 8px;
+    margin: 4px 0;
+    border-radius: 6px;
+    font-size: 14px;
+    line-height: 1.2;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    white-space: normal;
+    cursor: pointer;
+    width: auto;
+    display: block;
+    position: relative;
+    z-index: 3;
+}
+
+
+
+
+.credential li.clicked,
+.career li.clicked {
+    border-radius: 6px 6px 0 0;
+}
+
+.credential li:hover,
+.career li:hover {
+    background-color: #3498db;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover states */
+.credential li:hover,
+.career li:hover {
+    background-color: #3498db;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Selected state */
+.selected {
+    display: inline-flex;
+    background-color: #2980B9;
+    color: white;
+    font-weight: 500;
+    padding: 4px 8px;
+    border-radius: 4px;
+    width: auto;
+}
+
+/* Disabled state */
+.disabled {
+    opacity: 0.1;
+    pointer-events: none;
+}
+
+/* Arrows SVG styling */
+#arrows {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+    overflow: visible;
+    /* Add this line */
+}
+
+.popup {
+    position: absolute;
+    background-color: #fff;
+    border-width: 0 1px 1px 1px;
+    border-style: solid;
+    border-color: #3498db;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px ;
+    box-sizing: border-box;
+    /* Ensure padding and border are included in width */
+    width: auto;
+    /* Allow auto width to adjust */
+    max-width: 100%;
+    /* Ensure it doesn't overflow the screen */
+    z-index: 10;
+}
+
+.popup h5 {
+    font-size: 14px;
+    color: #2980B9; /* Blue color for headings */
+    margin-bottom: 8px;
+}
+
+.popup p {
+    font-size: 13px;
+    color: #333; /* Dark text for readability */
+    line-height: 1.4;
+    margin: 4px 0;
+}
+
+.popup strong {
+    color: #2980B9; /* Blue color for strong text */
+}
+
+.popup button {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Two-column layout for larger screens */
+.column-split {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    text-align: left;
+    padding-left: 0.75rem;
+}
+
+.column-split li {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: left;
+    padding-left: 0.75rem;
+}
+
+
+
+/* Add this to your CSS file (style.css) */
+/* Add this to your CSS file (style.css) */
+.credential li[data-title] {
+    position: relative;
+}
+
+.credential li[data-title]::after {
+    content: attr(data-title);
+    position: absolute;
+    bottom: calc(100% + 10px); /* Increased distance from the element */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 30px; /* Slightly larger padding for better readability */
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+    z-index: 10;
+}
+
+.credential li[data-title]::before {
+    content: '';
+    position: absolute;
+    bottom: calc(100% + 5px); /* Adjusted to touch the tooltip */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #333; /* Arrow pointing down */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+    z-index: 10;
+}
+
+.credential li[data-title]:hover::after,
+.credential li[data-title]:hover::before {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* new popup content css start */
+
+/* new popup content css end */
+
+
+
+
+/* All media queries */
+
+/* Adjust gap for small screens */
+@media (max-width: 768px) {
+    .three-columns-grid {
+        grid-template-columns: 10% 45% 45%;
+    }
+
+    .column-split {
+        grid-template-columns: 1fr;
+    }
+
+    .credential li,
+    .career li {
+        font-size: 11px;
+        padding: 6px;
+        padding-left: 8px;
+        text-align: left;
+        inline-size: 150px;
+        overflow: wrap;
+    }
+
+
+    .edu-level-doctoral-degree,
+    .edu-level-masters-degree,
+    .edu-level-bachelors-degree,
+    .edu-level-associate-degree,
+    .edu-level-certificate,
+    .edu-level-high-school {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        -webkit-writing-mode: vertical-lr;
+        /* Safari */
+        -ms-writing-mode: vertical-lr;
+        /* IE */
+        writing-mode: vertical-lr;
+        text-orientation: mixed;
+        text-align: center;
+        vertical-align: middle;
+        white-space: nowrap;
+        border: none;
+        transform: rotate(180deg);
+    }
+
+
+    .edu-level-six-year-college {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        -webkit-writing-mode: vertical-lr;
+        -ms-writing-mode: vertical-lr;
+        writing-mode: vertical-lr;
+        text-orientation: mixed;
+        text-align: center;
+        vertical-align: middle;
+        white-space: nowrap;
+        border: none;
+        transform: rotate(180deg);
+    }
+
+    .edu-level-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        transform: rotate(180deg);
+        white-space: normal;
+        word-break: break-word;
+        font-size: 12px;
+        padding: 5px;
+        height: auto;
+        border-top-left-radius: 0px;
+    }
+
+    .edu-level-header span {
+        display: block;
+        margin: 2px 0;
+    }
+
+    .edu-level-high-school {
+        border-bottom-left-radius: 0px;
+        /* Remove border radius */
+    }
+
+    .credential,
+    .career {
+        flex: none;
+        /* Remove flex property */
+    }
+
+    .popup h5 {
+        font-size: 13px; /* Smaller font size for mobile */
+    }
+
+    .popup p {
+        font-size: 12px; /* Smaller font size for mobile */
+    }
+
+}
+
+
+/* Adjust gap for extra small screens */
+@media (max-width: 480px) {
+
+    .three-columns-grid {
+        grid-template-columns: 10% 45% 45%;
+    }
+
+    .column-split {
+        grid-template-columns: 1fr;
+    }
+
+    .credential li,
+    .career li {
+        font-size: 10px;
+        padding: 4px;
+        padding-left: 8px;
+        text-align: left;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        hyphens: auto;
+        white-space: normal;
+    }
+
+    .edu-level-associate-degree+.certificate-col-certificate-row .credential li {
+        width: 95%;
+        font-size: 10px;
+        padding: 4px;
+    }
+
+    .edu-level-doctoral-degree,
+    .edu-level-masters-degree,
+    .edu-level-bachelors-degree,
+    .edu-level-associate-degree,
+    .edu-level-high-school,
+    .edu-level-six-year-college {
+        writing-mode: vertical-lr;
+        text-orientation: mixed;
+        transform: rotate(180deg);
+        white-space: nowrap;
+        word-wrap: normal;
+        overflow-wrap: normal;
+        hyphens: none;
+    }
+
+    .edu-level-six-year-college {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        -webkit-writing-mode: vertical-lr;
+        -ms-writing-mode: vertical-lr;
+        writing-mode: vertical-lr;
+        text-orientation: mixed;
+        text-align: center;
+        vertical-align: middle;
+        white-space: nowrap;
+        border: none;
+        transform: rotate(180deg);
+    }
+
+    .edu-level-high-school {
+        border-bottom-left-radius: 0px;
+        /* Remove border radius */
+    }
+
+    .credential,
+    .career {
+        flex: none;
+        /* Remove flex property */
+    }
+
+}
