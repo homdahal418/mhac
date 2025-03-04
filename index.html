@@ -7,629 +7,699 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Career Pathways Table</title>
     <link rel="stylesheet" href="style.css">
-    <script type="text/javascript">
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
-        }
-    </script>
-    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
     <style>
-        .skiptranslate iframe{
-            display: none;
+        /* Hide the Google Translate top bar and iframe */
+        .goog-te-banner-frame.skiptranslate,
+        .VIpgJd-ZVi9od-ORHb-OEVmcd.skiptranslate {
+            display: none !important;
         }
-        #google_translate_element{
-            text-align: end;
-        }
-        body{
-            top: 0 !important;
+
+        body {
+            top: 0px !important;
         }
     </style>
 </head>
 
 <body>
-    
-<div id="google_translate_element"></div>
+    <!-- google translate poprtion start -->
+    <div class="flex-container">
+        <div id="google_translate_element" class="language-selection"></div>
+        <!-- google translate portion end -->
 
-    <div class="three-columns-grid">
-        
-        <div class="edu-level-header">
-            <span><b>Education </b></span>
-            <span><b>Level</b></span>
-        </div>
-        <div class="certificate-header"><b>Degree / Certification</b></div>
-        <div class="career-header"><b>Career</b></div>
-
-        <!-- Doctorate degree row -->
-        <div class="edu-level-doctoral-degree"><b>Doctorate Degree</b></div>
-        <div class="certificate-col-doctoral-row">
-            <div class="credential">
-                <ul class="column-split">
-                    <li id="phd" data-related="researcher,professor" data-alternative="phramd">
-                        Ph.D.
-                    </li>
-                    <li id="doctorate-mft" data-related="marriage-family-therapist,researcher"
-                        data-alternative="masters-mft">
-                        Doct. in MFT
-                    </li>
-                    <li id="doctorate-social-work" data-related="mental-health-clinician-lcsw,researcher"
-                        data-alternative="masters-social-work">
-                        Doct. in SW
-                    </li>
-                    <li id="dnp" data-related="nurse-practitioner,clinical-nurse-specialist" data-alternative="msn">
-                        DNP
-                    </li>
-                    <li id="md-or-do" data-related="physician,medical-specialist"
-                        data-alternative="masters-social-work-nursing-education">
-                        MD or DO
-                    </li>
-                    <li id="dnp-pnp" data-related="pediatric-nurse-practitioner,clinical-nurse-specialist"
-                        data-alternative="msn-pnp">
-                        DNP (PNP program)
-                    </li>
-                    
-                    <li id="pharmd" data-related="pharmacist,clinical-pharmacist" data-alternative="phd">
-                        PharmD
-                    </li>
-                    <li id="phd-nursing" data-related="nurse-scientist,researcher">
-                        Ph.D. in Nursing
-                    </li>
-                    <li id="phd-psychology" data-related="psychologist,researcher">
-                        Ph.D. in Psychology
-                    </li>
-                    <li id="phd-educational-measurement" data-related="educational-psychologist,quantitative-analyst"
-                        data-alternative="masters-educational-measurement">
-                        Ph.D. in Educational Measurement, Quantitative Psychology, or Statistics
-                    </li>
-                    <li id="phd-or-psyd" data-related="psychologist,researcher">
-                        Ph.D. or Psy.D.
-                    </li>
-                    <li id="psyd" data-related="psychologist-licensed-clinical,mental-health-clinician-psychologist">
-                        Psy.D.
-                    </li>
-                </ul>
+        <div class="three-columns-grid">
+            <div class="edu-level-header">
+                <span><b>Education </b></span>
+                <span><b>Level</b></span>
             </div>
-        </div>
+            <div class="certificate-header"><b>Degree / Certification</b></div>
+            <div class="career-header"><b>Career</b></div>
+
+            <!-- Doctorate degree row -->
+            <div class="edu-level-doctoral-degree"><b>Doctorate Degree</b></div>
+            <div class="certificate-col-doctoral-row">
+                <div class="credential">
+                    <ul class="column-split">
 
 
-        <div class="career-col-doctoral-row">
-            <div class="career">
-                <ul class="column-split">
+                        <li id="phd" data-related="pharmacist-pharmd" data-alternative="phramd">
+                            Ph.D.
+                        </li>
+                        <li id="dnp"
+                            data-related="nurse-practitioner-aprn-cnp,advanced-practice-registered-nurse-aprn,clinical-nurse-specialist-cns-pmh-cns,certified-nurse-midwife-cnm"
+                            data-alternative="msn">
+                            DNP
+                        </li>
 
-                    <li id="psychiatric-physician-md-do"
-                        data-related="high-school-diploma-ged,bachelor-any-field,md-or-do">
-                        Psychiatric Physician (MD/DO)
-                    </li>
-                    <li id="psychiatrist-md-do" data-related="high-school-diploma-ged,bachelor-any-field,md-or-do">
-                        Psychiatrist (MD/DO)
-                    </li>
-                    <li id="psychologist-phd-psyd"
-                        data-related="high-school-diploma-ged,bachelor-any-field,phd-or-psyd">
-                        Psychologist (Ph.D./Psy.D.)
-                    </li>
-                    <li id="clinical-psychologist-phd-psyd"
-                        data-related="high-school-diploma-ged,bachelor-any-field,phd-or-psyd">
-                        Clinical Psychologist (Ph.D./Psy.D.)
-                    </li>
-                    <li id="research-psychologist-phd"
-                        data-related="high-school-diploma-ged,bachelor-any-field,phd-psychology">
-                        Research Psychologist (Ph.D.)
-                    </li>
-                    <li id="psychopharmacologist-pharmd"
-                        data-related="high-school-diploma-ged,bachelor-any-field,pharmd">
-                        Psychopharmacologist (PharmD)
-                    </li>
-                    <li id="pharmacist-pharmd" data-related="high-school-diploma-ged,phd,pharmd">
-                        Pharmacist (PharmD)
-                    </li>
-                    <li id="nurse-scientist-phd"
-                        data-related="high-school-diploma-ged,bachelor-science-nursing-bsn,phd-nursing">
-                        Nurse Scientist (Ph.D.)
-                    </li>
 
-                </ul>
+                        <li id="md-or-do" data-related="psychiatric-physician-md-do,psychiatrist-md-do"
+                            data-alternative="masters-social-work-nursing-education">
+                            MD or DO
+                        </li>
+                        <li id="doctorate-social-work" data-related="licensed-social-worker-lsw"
+                            data-alternative="masters-social-work">
+                            Doct. in SW
+                        </li>
+
+                        <li id="doctorate-mft"
+                            data-related="marriage-family-therapist-mft,independent-marriage-family-therapist-imft,independent-marriage-family-therapist-supervision-imft-s"
+                            data-alternative="masters-mft">
+                            Doct. in MFT
+                        </li>
+
+
+
+                        <li id="dnp-pnp" data-related="psychiatric-nurse-practitioner-pmhnp-bc"
+                            data-alternative="msn-pnp">
+                            DNP (PNP program)
+                        </li>
+
+                        <li id="phd-psychology" data-related="research-psychologist-phd">
+                            Ph.D. in Psychology
+                        </li>
+                        <li id="phd-nursing" data-related="nurse-scientist-phd">
+                            Ph.D. in Nursing
+                        </li>
+                        <li id="phd-educational-measurement" data-related="psychometrician"
+                            data-alternative="masters-educational-measurement">
+                            Ph.D. in Educational Measurement, Quantitative Psychology, or Statistics
+                        </li>
+                        <li id="phd-or-psyd" data-related="psychologist-phd-psyd,clinical-psychologist-phd-psyd">
+                            Ph.D. or Psy.D.
+                        </li>
+
+                        <li id="pharmd" data-related="psychopharmacologist-pharmd,pharmacist-pharmd"
+                            data-alternative="phd">
+                            PharmD
+                        </li>
+                        <li id="psyd" data-related="psychologist-phd-psyd,clinical-psychologist-phd-psyd">
+                            Psy.D.
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
 
-        <!-- Masters degree row -->
-        <div class="edu-level-masters-degree"><b>Masters Degree</b></div>
-        <div class="certificate-col-masters-row">
-            <div class="credential">
-                <ul class="column-split">
-                    
-                    <li id="msn" data-related="nurse-practitioner,clinical-nurse-specialist"
-                        data-alternative="masters-behavioral-science,dnp,masters-science-nursing">
-                        MSN
-                    </li>
-                    <li id="masters-behavioral-science"
-                        data-related="behavioral-health-specialist,mental-health-clinician">
-                        Mast. in a Behavioral Science
-                    </li>
-                    
-                    <li id="masters-psychology" data-related="mental-health-clinician,psychologist-associate">
-                        Mast. in Psychology
-                    </li>
-                    <li id="msw-or-cacrep-counseling" data-related="clinical-social-worker,mental-health-counselor">
-                        MSW or Mast. from a CACREP-accredited counseling program
-                    </li>
-                    <li id="msw-or-behavioral-science"
-                        data-related="clinical-social-worker,behavioral-health-specialist">
-                        MSW or Mast. in Behavioral Science
-                    </li>
-                    <li id="masters-cacrep-counseling" data-related="mental-health-counselor,school-counselor"
-                        data-alternative="masters-social-work,masters-non-cacrep">
-                        Mast. from a CACREP-accredited counseling program
-                    </li>
-                    <li id="masters-behavioral-health-science"
-                        data-related="behavioral-health-specialist,mental-health-clinician" data-alternative="msn">
-                        Mast. in Behavioral Health Science
-                    </li>
-                    <li id="masters-occupational-therapy"
-                        data-related="occupational-therapist,rehabilitation-counselor">
-                        Mast. in Occupational Therapy
-                    </li>
-                    <li id="masters-art-therapy" data-related="art-therapist,mental-health-clinician">
-                        Mast. in Art Therapy
-                    </li>
-                    <li id="mpas" data-related="physician-assistant,medical-specialist">
-                        MPAS
-                    </li>
-                    <li id="masters-counseling" data-related="mental-health-counselor,substance-abuse-counselor">
-                        Mast. in Counseling
-                    </li>
-                    <li id="masters-mft" data-related="marriage-family-therapist,mental-health-clinician"
-                        data-alternative="doctorate-mft">
-                        Mast. in MFT
-                    </li>
-                    <li id="masters-social-work" data-related="clinical-social-worker,medical-social-worker"
-                        data-alternative="doctorate-social-work,masters-cacrep-counseling,masters-behavioral-science">
-                        MSW
-                    </li>
-                    <li id="msn-pnp" data-related="pediatric-nurse-practitioner,clinical-nurse-specialist"
-                        data-alternative="dnp-pnp">
-                        MSN (PNP program)
-                    </li>
-                    <li id="masters-educational-measurement"
-                        data-related="educational-psychologist,quantitative-analyst"
-                        data-alternative="phd-educational-measurement">
-                        Mast. in Educational Measurement, Quantitative Psychology, or Statistics
-                    </li>
-                    <li id="masters-social-work-nursing-education" data-related="clinical-social-worker,nurse-educator"
-                        data-alternative="md-or-do">
-                        Mast. in Social Work, Nursing, Education, Counseling, Psychology or Occupational Therapy
-                    </li>
-                    <li id="md-or-do" data-related="physician,medical-specialist">
-                        MD or DO
-                    </li>
-                    <li id="masters-non-cacrep" data-related="mental-health-counselor,school-counselor"
-                        data-alternative="masters-cacrep-counseling">
-                        Mast. from an accredited institution (non-CACREP)
-                    </li>
-                </ul>
+
+            <div class="career-col-doctoral-row">
+                <div class="career">
+                    <ul class="column-split">
+
+                        <li id="psychiatric-physician-md-do"
+                            data-related="high-school-diploma-ged,bachelor-any-field,md-or-do">
+                            Psychiatric Physician (MD/DO)
+                        </li>
+                        <li id="psychiatrist-md-do" data-related="high-school-diploma-ged,bachelor-any-field,md-or-do">
+                            Psychiatrist (MD/DO)
+                        </li>
+                        <li id="research-psychologist-phd"
+                            data-related="high-school-diploma-ged,bachelor-any-field,phd-psychology">
+                            Research Psychologist (Ph.D.)
+                        </li>
+                        <li id="psychologist-phd-psyd"
+                            data-related="high-school-diploma-ged,bachelor-any-field,phd-or-psyd">
+                            Psychologist (Ph.D./Psy.D.)
+                        </li>
+
+
+                        <li id="psychopharmacologist-pharmd"
+                            data-related="high-school-diploma-ged,bachelor-any-field,pharmd">
+                            Psychopharmacologist (PharmD)
+                        </li>
+                        <li id="clinical-psychologist-phd-psyd"
+                            data-related="high-school-diploma-ged,bachelor-any-field,phd-or-psyd">
+                            Clinical Psychologist (Ph.D./Psy.D.)
+                        </li>
+                        <li id="pharmacist-pharmd" data-related="high-school-diploma-ged,phd,pharmd">
+                            Pharmacist (PharmD)
+                        </li>
+                        <li id="nurse-scientist-phd"
+                            data-related="high-school-diploma-ged,bachelor-science-nursing-bsn,phd-nursing">
+                            Nurse Scientist (Ph.D.)
+                        </li>
+
+                    </ul>
+                </div>
             </div>
-        </div>
 
-        <div class="career-col-masters-row">
-            <div class="career">
-                <ul class="column-split">
-                    <li id="qualified-mental-health-specialist-iii-qbhs-iii"
-                        data-related="high-school-diploma-ged,bachelor-behavioral-science,masters-behavioral-health-science">
-                        Qualified Mental Health Specialist III (QBHS-III)</li>
-                    <li id="sud-counselor-licdc"
-                        data-related="high-school-diploma-ged,bachelor-behavioral-science,masters-behavioral-health-science,msn">
-                        SUD Counselor (LICDC)</li>
-                    <li id="sud-counselor-clinical-supervisor-licdc-cs"
-                        data-related="high-school-diploma-ged,bachelor-behavioral-science,masters-behavioral-health-science,msn">
-                        SUD Counselor Clinical Supervisor (LICDC-CS)</li>
-                    <li id="behavioral-health-therapist-lpc-lsw"
-                        data-related="high-school-diploma-ged,bachelor-any-field,masters-social-work,masters-cacrep-counseling">
-                        Behavioral Health Therapist (LPC/LSW)</li>
-                    <li id="behavioral-health-counselor-lpc-lsw"
-                        data-related="high-school-diploma-ged,bachelor-any-field,masters-social-work,masters-cacrep-counseling">
-                        Behavioral Health Counselor (LPC/LSW)</li>
-                    <li id="certified-counselor-lpc-lisw"
-                        data-related="high-school-diploma-ged,bachelor-any-field,masters-social-work,masters-cacrep-counseling">
-                        Certified Counselor (LPC/LISW)</li>
-                    <li id="mental-health-counselor-lpc-lisw"
-                        data-related="high-school-diploma-ged,bachelor-any-field,masters-social-work,masters-cacrep-counseling">
-                        Mental Health Counselor (LPC/LISW)</li>
-                    <li id="licensed-professional-counselor-lpc"
-                        data-related="high-school-diploma-ged,bachelor-any-field,masters-cacrep-counseling,masters-non-cacrep">
-                        Licensed Professional Counselor (LPC)</li>
-                    <li id="licensed-independent-social-worker-lisw"
-                        data-related="high-school-diploma-ged,bachelor-any-field,masters-social-work">
-                        Licensed Independent Social Worker (LISW)</li>
-                    <li id="mental-health-therapist-lpc-lisw"
-                        data-related="high-school-diploma-ged,bachelor-any-field,msw-or-cacrep-counseling">
-                        Mental Health Therapist (LPC/LISW)</li>
-                    <li id="couples-therapist-lpc-lisw"
-                        data-related="high-school-diploma-ged,bachelor-any-field,msw-or-cacrep-counseling">
-                        Couples Therapist (LPC/LISW)</li>
-                    <li id="psychotherapist-lpc-lisw"
-                        data-related="high-school-diploma-ged,bachelor-behavioral-science,masters-social-work,masters-behavioral-science">
-                        Psychotherapist (LPC/LISW)</li>
-                    <li id="school-based-therapist-lpc-lisw"
-                        data-related="high-school-diploma-ged,bachelor-any-field,msw-or-behavioral-science">
-                        School Based Therapist (LPC/LISW)</li>
-                    <li id="occupational-therapist-otr"
-                        data-related="high-school-diploma-ged,bachelor-any-field,masters-occupational-therapy">
-                        Occupational Therapist (OTR)</li>
-                    <li id="art-therapist-atr-bc"
-                        data-related="high-school-diploma-ged,bachelor-any-field,masters-art-therapy">
-                        Art Therapist (ATR-BC)</li>
-                    <li id="physician-assistant-pa" data-related="high-school-diploma-ged,bachelor-any-field,mpas">
-                        Physician Assistant (PA)</li>
-                    <li id="licensed-professional-clinical-counselor-lpcc"
-                        data-related="high-school-diploma-ged,bachelor-any-field,masters-counseling">
-                        Licensed Professional Clinical Counselor (LPCC)</li>
-                    <li id="licensed-professional-clinical-counselor-supervision-lpcc-s"
-                        data-related="high-school-diploma-ged,bachelor-any-field,masters-counseling">
-                        Licensed Professional Clinical Counselor with Supervision Designation (LPCC-S)</li>
-                    <li id="licensed-independent-social-worker-supervision-lisw-s"
-                        data-related="high-school-diploma-ged,bachelor-any-field,masters-social-work">
-                        Licensed Independent Social Worker with Supervision Designation (LISW-S)</li>
-                    <li id="marriage-family-therapist-mft"
-                        data-related="high-school-diploma-ged,bachelor-any-field,masters-mft,doctorate-mft">
-                        Marriage & Family Therapist (MFT)</li>
-                    <li id="independent-marriage-family-therapist-imft"
-                        data-related="high-school-diploma-ged,bachelor-any-field,masters-mft,doctorate-mft">
-                        Independent Marriage and Family Therapist (IMFT)</li>
-                    <li id="independent-marriage-family-therapist-supervision-imft-s"
-                        data-related="high-school-diploma-ged,bachelor-any-field,masters-mft,doctorate-mft">
-                        Independent Marriage and Family Therapist with Supervision (IMFT-S)</li>
-                    <li id="nurse-practitioner-aprn-cnp"
-                        data-related="high-school-diploma-ged,bachelor-science-nursing-bsn,msn,dnp">
-                        Nurse Practitioner (APRN/CNP)</li>
-                    <li id="psychiatric-nurse-practitioner-pmhnp-bc"
-                        data-related="high-school-diploma-ged,bachelor-science-nursing-bsn,msn-pnp,dnp-pnp">
-                        Psychiatric Nurse Practitioner (PMHNP-BC)</li>
-                    <li id="advanced-practice-registered-nurse-aprn"
-                        data-related="high-school-diploma-ged,bachelor-science-nursing-bsn,msn,dnp">
-                        Advanced Practice Registered Nurse (APRN)</li>
-                    <li id="clinical-nurse-specialist-cns-pmh-cns"
-                        data-related="high-school-diploma-ged,bachelor-science-nursing-bsn,msn,dnp">
-                        Clinical Nurse Specialist (CNS/PMH-CNS)</li>
-                    <li id="certified-nurse-midwife-cnm"
-                        data-related="high-school-diploma-ged,bachelor-science-nursing-bsn,msn,dnp">
-                        Certified Nurse Midwife (CNM)</li>
-                    <li id="psychometrician"
-                        data-related="high-school-diploma-ged,bachelor-any-field,masters-educational-measurement,phd-educational-measurement">
-                        Psychometrician</li>
-                    <li id="ohio-infant-mental-health-practitioner-level-iii-oifp-iii"
-                        data-related="high-school-diploma-ged,bachelor-any-field,masters-social-work-nursing-education,md-or-do">
-                        Ohio Infant Mental Health Practitioner Level III (OIFP-III)</li>
-                </ul>
+            <!-- Masters degree row -->
+            <div class="edu-level-masters-degree"><b>Masters Degree</b></div>
+            <div class="certificate-col-masters-row">
+                <div class="credential">
+                    <ul class="column-split">
+
+                        <li id="msn"
+                            data-related="sud-counselor-licdc,sud-counselor-clinical-supervisor-licdc-cs,nurse-practitioner-aprn-cnp,advanced-practice-registered-nurse-aprn,clinical-nurse-specialist-cns-pmh-cns,certified-nurse-midwife-cnm"
+                            data-alternative="masters-behavioral-science,dnp,masters-science-nursing">
+                            MSN
+                        </li>
+                        <li id="masters-behavioral-science" data-related="psychotherapist-lpc-lisw" data-alternative="">
+                            Mast. in a Behavioral Science
+                        </li>
+
+                        <li id="masters-psychology" data-related="clinical-psychometrist" data-alternative="bachelor-psychology">
+                            Mast. in Psychology
+                        </li>
+                        <li id="msw-or-cacrep-counseling"
+                            data-related="clinical-social-worker,mental-health-counselor,mental-health-therapist-lpc-lisw,couples-therapist-lpc-lisw">
+                            MSW or Mast. from a CACREP-accredited counseling program
+                        </li>
+                        <li id="msw-or-behavioral-science" data-related="school-based-therapist-lpc-lisw">
+                            MSW or Mast. in Behavioral Science
+                        </li>
+                        <li id="masters-cacrep-counseling"
+                            data-related="behavioral-health-counselor-lpc-lsw,certified-counselor-lpc-lisw,mental-health-counselor-lpc-lisw,licensed-professional-counselor-lpc,behavioral-health-therapist-lpc-lsw"
+                            data-alternative="masters-social-work,masters-non-cacrep">
+                            Mast. from a CACREP-accredited counseling program
+                        </li>
+                        <li id="masters-behavioral-health-science"
+                            data-related="qualified-mental-health-specialist-iii-qbhs-iii,sud-counselor-licdc,sud-counselor-clinical-supervisor-licdc-cs,"
+                            data-alternative="msn">
+                            Mast. in Behavioral Health Science
+                        </li>
+                        <li id="masters-occupational-therapy"
+                            data-related="occupational-therapist,rehabilitation-counselor,occupational-therapist-otr">
+                            Mast. in Occupational Therapy
+                        </li>
+                        <li id="masters-art-therapy"
+                            data-related="art-therapist,mental-health-clinician,art-therapist-atr-bc">
+                            Mast. in Art Therapy
+                        </li>
+                        <li id="mpas" data-related="physician-assistant,medical-specialist,physician-assistant-pa">
+                            MPAS
+                        </li>
+                        <li id="masters-counseling"
+                            data-related="mental-health-counselor,substance-abuse-counselor,licensed-professional-clinical-counselor-lpcc,licensed-professional-clinical-counselor-supervision-lpcc-s">
+                            Mast. in Counseling
+                        </li>
+                        <li id="masters-mft"
+                            data-related="marriage-family-therapist,mental-health-clinician,marriage-family-therapist-mft,independent-marriage-family-therapist-imft,independent-marriage-family-therapist-supervision-imft-s"
+                            data-alternative="doctorate-mft">
+                            Mast. in MFT
+                        </li>
+                        <li id="masters-social-work"
+                            data-related="behavioral-health-therapist-lpc-lsw,behavioral-health-counselor-lpc-lsw,certified-counselor-lpc-lisw,mental-health-counselor-lpc-lisw,licensed-independent-social-worker-lisw,psychotherapist-lpc-lisw,licensed-independent-social-worker-supervision-lisw-s,licensed-social-worker-lsw"
+                            data-alternative="doctorate-social-work,masters-cacrep-counseling,masters-behavioral-science">
+                            MSW
+                        </li>
+                        <li id="msn-pnp"
+                            data-related="pediatric-nurse-practitioner,clinical-nurse-specialist,psychiatric-nurse-practitioner-pmhnp-bc"
+                            data-alternative="dnp-pnp">
+                            MSN (PNP program)
+                        </li>
+                        <li id="masters-social-work-nursing-education"
+                            data-related="clinical-social-worker,nurse-educator,ohio-infant-mental-health-practitioner-level-iii-oifp-iii"
+                            data-alternative="md-or-do">
+                            Mast. in Social Work, Nursing, Education, Counseling, Psychology or Occupational Therapy
+                        </li>
+                        <li id="masters-educational-measurement"
+                            data-related="educational-psychologist,quantitative-analyst,psychometrician"
+                            data-alternative="phd-educational-measurement">
+                            Mast. in Educational Measurement, Quantitative Psychology, or Statistics
+                        </li>
+
+                        <li id="md-or-do" data-related="" data-alternative="masters-social-work-nursing-education">
+                            MD or DO
+                        </li>
+                        <li id="masters-non-cacrep"
+                            data-related="mental-health-counselor,school-counselor,licensed-professional-counselor-lpc,behavioral-health-therapist-lpc-lsw,behavioral-health-counselor-lpc-lsw,certified-counselor-lpc-lisw,mental-health-counselor-lpc-lisw"
+                            data-alternative="masters-cacrep-counseling">
+                            Mast. from an accredited institution (non-CACREP)
+                        </li>
+                        <li id="masters-science-nursing"
+                            data-related="sud-counselor-licdc,sud-counselor-clinical-supervisor-licdc-cs,nurse-practitioner-aprn-cnp,advanced-practice-registered-nurse-aprn,clinical-nurse-specialist-cns-pmh-cns,certified-nurse-midwife-cnm">
+                            Mast. in Science Nursing
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
 
-        <!-- Bachelors degree row -->
-        <div class="edu-level-bachelors-degree"><b>Bachelors Degree</b></div>
-        <div class="certificate-col-bachelors-row">
-            <div class="credential">
-                <ul class="column-split">
-                    <li id="bachelor-behavioral-science" data-related="expert,consultant">Bachelor in Behavioral Science
-                    </li>
-                    <li id="bachelor-social-work-psychology-behavioral-science" data-related="expert,consultant">
-                        Bachelor’s in Social Work (SW), Psychology, or a Behavioral Science</li>
+            <div class="career-col-masters-row">
+                <div class="career">
+                    <ul class="column-split">
+                        <li id="qualified-mental-health-specialist-iii-qbhs-iii"
+                            data-related="high-school-diploma-ged,bachelor-behavioral-science,masters-behavioral-health-science">
+                            Qualified Mental Health Specialist III (QBHS-III)</li>
+                        <li id="sud-counselor-licdc"
+                            data-related="high-school-diploma-ged,bachelor-behavioral-science,masters-behavioral-health-science,msn">
+                            SUD Counselor (LICDC)</li>
+                        <li id="sud-counselor-clinical-supervisor-licdc-cs"
+                            data-related="high-school-diploma-ged,bachelor-behavioral-science,masters-behavioral-health-science,msn">
+                            SUD Counselor Clinical Supervisor (LICDC-CS)</li>
+                        <li id="behavioral-health-therapist-lpc-lsw"
+                            data-related="high-school-diploma-ged,bachelor-any-field,masters-social-work,masters-cacrep-counseling">
+                            Behavioral Health Therapist (LPC/LSW)</li>
+                        <li id="behavioral-health-counselor-lpc-lsw"
+                            data-related="high-school-diploma-ged,bachelor-any-field,masters-social-work,masters-cacrep-counseling">
+                            Behavioral Health Counselor (LPC/LSW)</li>
+                        <li id="certified-counselor-lpc-lisw"
+                            data-related="high-school-diploma-ged,bachelor-any-field,masters-social-work,masters-cacrep-counseling">
+                            Certified Counselor (LPC/LISW)</li>
+                        <li id="mental-health-counselor-lpc-lisw"
+                            data-related="high-school-diploma-ged,bachelor-any-field,masters-social-work,masters-cacrep-counseling">
+                            Mental Health Counselor (LPC/LISW)</li>
+                        <li id="licensed-professional-counselor-lpc"
+                            data-related="high-school-diploma-ged,bachelor-any-field,masters-cacrep-counseling,masters-non-cacrep">
+                            Licensed Professional Counselor (LPC)</li>
+                        <li id="licensed-independent-social-worker-lisw"
+                            data-related="high-school-diploma-ged,bachelor-any-field,masters-social-work">
+                            Licensed Independent Social Worker (LISW)</li>
+                        <li id="mental-health-therapist-lpc-lisw"
+                            data-related="high-school-diploma-ged,bachelor-any-field,msw-or-cacrep-counseling">
+                            Mental Health Therapist (LPC/LISW)</li>
+                        <li id="couples-therapist-lpc-lisw"
+                            data-related="high-school-diploma-ged,bachelor-any-field,msw-or-cacrep-counseling">
+                            Couples Therapist (LPC/LISW)</li>
+                        <li id="psychotherapist-lpc-lisw"
+                            data-related="high-school-diploma-ged,bachelor-behavioral-science,masters-social-work,masters-behavioral-science">
+                            Psychotherapist (LPC/LISW)</li>
+                        <li id="school-based-therapist-lpc-lisw"
+                            data-related="high-school-diploma-ged,bachelor-any-field,msw-or-behavioral-science">
+                            School Based Therapist (LPC/LISW)</li>
+                        <li id="occupational-therapist-otr"
+                            data-related="high-school-diploma-ged,bachelor-any-field,masters-occupational-therapy">
+                            Occupational Therapist (OTR)</li>
+                        <li id="art-therapist-atr-bc"
+                            data-related="high-school-diploma-ged,bachelor-any-field,masters-art-therapy">
+                            Art Therapist (ATR-BC)</li>
+                        <li id="physician-assistant-pa" data-related="high-school-diploma-ged,bachelor-any-field,mpas">
+                            Physician Assistant (PA)</li>
+                        <li id="licensed-professional-clinical-counselor-lpcc"
+                            data-related="high-school-diploma-ged,bachelor-any-field,masters-counseling">
+                            Licensed Professional Clinical Counselor (LPCC)</li>
+                        <li id="licensed-professional-clinical-counselor-supervision-lpcc-s"
+                            data-related="high-school-diploma-ged,bachelor-any-field,masters-counseling">
+                            Licensed Professional Clinical Counselor with Supervision Designation (LPCC-S)</li>
+                        <li id="licensed-independent-social-worker-supervision-lisw-s"
+                            data-related="high-school-diploma-ged,bachelor-any-field,masters-social-work">
+                            Licensed Independent Social Worker with Supervision Designation (LISW-S)</li>
+                        <li id="marriage-family-therapist-mft"
+                            data-related="high-school-diploma-ged,bachelor-any-field,masters-mft,doctorate-mft">
+                            Marriage & Family Therapist (MFT)</li>
+                        <li id="independent-marriage-family-therapist-imft"
+                            data-related="high-school-diploma-ged,bachelor-any-field,masters-mft,doctorate-mft">
+                            Independent Marriage and Family Therapist (IMFT)</li>
+                        <li id="independent-marriage-family-therapist-supervision-imft-s"
+                            data-related="high-school-diploma-ged,bachelor-any-field,masters-mft,doctorate-mft">
+                            Independent Marriage and Family Therapist with Supervision (IMFT-S)</li>
 
-                    <li id="bachelor-social-work-bsw" data-related="expert,consultant"
-                        data-alternative="masters-social-work">Bachelor of Social Work (BSW)
-                    </li>
-                    <li id="bachelor-science-nursing-bsn" data-related="expert,consultant"
-                        data-alternative="associate-degree-nursing-adn">Bachelor of Science in
-                        Nursing (BSN)</li>
-                    <li id="bachelor-music-therapy" data-related="expert,consultant">Bachelor in Music Therapy</li>
-                    <li id="bachelor-mental-health-developmental-disabilities" data-related="expert,consultant">Bachelor
-                        in Mental Health or Developmental Disabilities Field</li>
-                    <li id="bachelor-science-nursing-bsn" data-related="expert,consultant"
-                        data-alternative="associate-degree-nursing-adn-psychiatric">Bachelor of Science in
-                        Nursing (BSN)</li>
-                    <li id="bachelor-science-nursing-bsn-psychiatric" data-related="expert,consultant"
-                        data-alternative="associate-degree-nursing-adn-psychiatric">Bachelor in Nursing (BSN) with a
-                        Focus in Psychiatric Nursing</li>
-                    <li id="bachelor-any-field" data-related="expert,consultant"
-                        data-alternative="associate-behavioral-science-nursing">Bachelor in Any Field</li>
-                    <li id="bachelor-psychology" data-related="expert,consultant" data-alternative="masters-psychology">
-                        Bachelor
-                        in Psychology</li>
-                </ul>
+                        <li id="psychiatric-nurse-practitioner-pmhnp-bc"
+                            data-related="high-school-diploma-ged,bachelor-science-nursing-bsn,msn-pnp,dnp-pnp">
+                            Psychiatric Nurse Practitioner (PMHNP-BC)</li>
+                        <li id="nurse-practitioner-aprn-cnp"
+                            data-related="high-school-diploma-ged,bachelor-science-nursing-bsn,msn,dnp">
+                            Nurse Practitioner (APRN/CNP)</li>
+                        <li id="advanced-practice-registered-nurse-aprn"
+                            data-related="high-school-diploma-ged,bachelor-science-nursing-bsn,msn,dnp">
+                            Advanced Practice Registered Nurse (APRN)</li>
+                        <li id="clinical-nurse-specialist-cns-pmh-cns"
+                            data-related="high-school-diploma-ged,bachelor-science-nursing-bsn,msn,dnp">
+                            Clinical Nurse Specialist (CNS/PMH-CNS)</li>
+                        <li id="certified-nurse-midwife-cnm"
+                            data-related="high-school-diploma-ged,bachelor-science-nursing-bsn,msn,dnp">
+                            Certified Nurse Midwife (CNM)</li>
+                        <li id="psychometrician"
+                            data-related="high-school-diploma-ged,bachelor-any-field,masters-educational-measurement,phd-educational-measurement">
+                            Psychometrician</li>
+                        <li id="ohio-infant-mental-health-practitioner-level-iii-oifp-iii"
+                            data-related="high-school-diploma-ged,bachelor-any-field,masters-social-work-nursing-education,md-or-do">
+                            Ohio Infant Mental Health Practitioner Level III (OIFP-III)</li>
+                    </ul>
+                </div>
             </div>
-        </div>
 
-        <div class="career-col-bachelors-row">
-            <div class="career">
-                <ul class="column-split">
-                    <li id="behavioral-health-specialist"
-                        data-related="high-school-diploma-ged,bachelor-behavioral-science">
-                        Behavioral Health Specialist</li>
-                    <li id="qualified-mental-health-specialist-ii"
-                        data-related="high-school-diploma-ged,bachelor-behavioral-science">Qualified Mental Health
-                        Specialist
-                        II</li>
-                    <li id="chemical-dependency-specialist-cadc"
-                        data-related="high-school-diploma-ged,bachelor-behavioral-science">Chemical Dependency
-                        Specialist
-                        (CADC)</li>
-                    <li id="prevention-specialist-cps"
-                        data-related="high-school-diploma-ged,bachelor-behavioral-science">
-                        Prevention Specialist (CPS)</li>
-                    <li id="sud-case-manager-cps-cadc-ocps-ccs"
-                        data-related="high-school-diploma-ged,bachelor-behavioral-science">SUD Case Manager
-                        (CPS/CADC/OCPS/CCS)
-                    </li>
-                    <li id="case-manager-ccm" data-related="high-school-diploma-ged,bachelor-behavioral-science">Case
-                        Manager
-                        (CCM)</li>
-                    <li id="crisis-response-specialist"
-                        data-related="high-school-diploma-ged,bachelor-behavioral-science">
-                        Crisis Response Specialist</li>
-                    <li id="intake-specialist" data-related="high-school-diploma-ged,bachelor-behavioral-science">Intake
-                        Specialist</li>
-                    <li id="mental-health-case-manager" data-related="high-school-diploma-ged,">
-                        Mental Health Case Manager</li>
-                    <li id="resiliency-care-manager"
-                        data-related="high-school-diploma-ged,bachelor-social-work-psychology-behavioral-science">
-                        Resiliency Care Manager</li>
-                    <li id="research-specialist" data-related="high-school-diploma-ged,bachelor-behavioral-science">
-                        Research
-                        Specialist</li>
-                    <li id="youth-case-manager" data-related="high-school-diploma-ged,bachelor-behavioral-science">Youth
-                        Case
-                        Manager</li>
-                    <li id="chemical-dependency-counselor-cadc"
-                        data-related="high-school-diploma-ged,bachelor-behavioral-science">Chemical Dependency Counselor
-                        (CADC)
-                    </li>
-                    <li id="counselor-trainee-ct" data-related="high-school-diploma-ged,bachelor-any-field">Counselor
-                        Trainee (CT)</li>
-                    <li id="sud-counselor-lcdc-iii" data-related="high-school-diploma-ged,bachelor-behavioral-science">
-                        SUD
-                        Counselor (LCDC III)</li>
-                    <li id="care-management-team-supervisor"
-                        data-related="high-school-diploma-ged,bachelor-behavioral-science">Care Management Team
-                        Supervisor</li>
-                    <li id="social-work-trainee-swt" data-related="high-school-diploma-ged,bachelor-any-field">Social
-                        Work Trainee (SWT)</li>
-                    <li id="licensed-social-worker-lsw"
-                        data-related="high-school-diploma-ged,bachelor-social-work-bsw,masters-social-work,dsw-social-work">
-                        Licensed Social Worker (LSW)</li>
-                    <li id="registered-nurse-rn"
-                        data-related="high-school-diploma-ged,associate-degree-nursing-adn,bachelor-science-nursing-bsn,">
-                        Registered
-                        Nurse (RN)</li>
-                    <li id="psychiatric-nurse-pmh-rn"
-                        data-related="high-school-diploma-ged,associate-degree-nursing-adn-psychiatric,bachelor-science-nursing-bsn-psychiatric">
-                        Psychiatric Nurse (PMH-RN)</li>
-                    <li id="mental-health-nurse-pmh-rn"
-                        data-related="high-school-diploma-ged,associate-degree-nursing-adn-psychiatric,bachelor-science-nursing-bsn-psychiatric">
-                        Mental Health Nurse (PMH-RN)</li>
-                    <li id="sud-nurse-carn" data-related="high-school-diploma-ged,bachelor-science-nursing-bsn">SUD
-                        Nurse (CARN)
-                    </li>
-                    <li id="marriage-family-therapist-trainee-mft-trainee"
-                        data-related="high-school-diploma-ged,bachelor-any-field">
-                        Marriage and Family Therapist
-                        Trainee (MFT Trainee)</li>
-                    <li id="music-therapist-mt-bc" data-related="high-school-diploma-ged,bachelor-music-therapy">Music
-                        Therapist (MT-BC)</li>
-                    <li id="psychiatric-technician-level-4-ncpt"
-                        data-related="high-school-diploma-ged,bachelor-mental-health-developmental-disabilities">
-                        Psychiatric
-                        Technician Level 4
-                        (NCPT)</li>
-                    <li id="clinical-psychometrist" data-related="high-school-diploma-ged,bachelor-psychology">Clinical
-                        Psychometrist</li>
-                    <li id="behavioral-health-case-manager"
-                        data-related="high-school-diploma-ged,bachelor-social-work-psychology-behavioral-science">
-                        Behavioral Health Case Manager</li>
-                    <li id="client-advocate-bcpa" data-related="high-school-diploma-ged,bachelor-any-field">Client
-                        Advocate (BCPA)</li>
-                    <li id="crisis-case-manager-lsw-lisw"
-                        data-related="high-school-diploma-ged,bachelor-social-work-bsw">
-                        Crisis Case Manager (LSW/LISW)</li>
-                    <li id="ohio-certified-prevention-consultant-ocpc"
-                        data-related="high-school-diploma-ged,bachelor-any-field">Ohio
-                        Certified Prevention Consultant
-                        (OCPC)</li>
-                    <li id="counselor-gambling-disorder-endorsement-gamb"
-                        data-related="high-school-diploma-ged,bachelor-behavioral-science">
-                        Counselor with Gambling Disorder
-                        Endorsement (GAMB)</li>
-                    <li id="certified-health-education-specialist-ches"
-                        data-related="high-school-diploma-ged,bachelor-behavioral-science">
-                        Certified Health Education
-                        Specialist (CHES)</li>
-                    <li id="clinical-psychometrist"
-                        data-related="high-school-diploma-ged,bachelor-psychology,masters-psychology"
-                        data-alternative="masters-psychology">Clinical Psychometrist</li>
-                    <li id="licensed-social-worker-lsw"
-                        data-related="high-school-diploma-ged,bachelor-social-work-bsw,masters-social-work,doctorate-social-work">
-                        Licensed Social Worker (LSW)</li>
-                </ul>
+            <!-- Bachelors degree row -->
+            <div class="edu-level-bachelors-degree"><b>Bachelors Degree</b></div>
+            <div class="certificate-col-bachelors-row">
+                <div class="credential">
+                    <ul class="column-split">
+                        <li id="bachelor-behavioral-science"
+                            data-related="behavioral-health-specialist,qualified-mental-health-specialist-ii,chemical-dependency-specialist-cadc,prevention-specialist-cps,sud-case-manager-cps-cadc-ocps-ccs,case-manager-ccm,crisis-response-specialist,intake-specialist,research-specialist,youth-case-manager,chemical-dependency-counselor-cadc,sud-counselor-lcdc-iii,care-management-team-supervisor,counselor-gambling-disorder-endorsement-gamb,certified-health-education-specialist-ches,ohio-infant-family-practitioner-level-ii-oifp-ii">
+                            Bachelor in Behavioral Science
+                        </li>
+                        <li id="bachelor-social-work-psychology-behavioral-science"
+                            data-related="resiliency-care-manager,behavioral-health-case-manager">
+                            Bachelor's in Social Work (SW), Psychology, or a Behavioral Science</li>
+
+                        <li id="bachelor-social-work-bsw"
+                            data-related="licensed-social-worker-lsw,crisis-case-manager-lsw-lisw"
+                            data-alternative="masters-social-work">Bachelor of Social Work (BSW)
+                        </li>
+                        <li id="bachelor-science-nursing-bsn" data-related="registered-nurse-rn,sud-nurse-carn"
+                            data-alternative="associate-degree-nursing-adn">Bachelor of Science in
+                            Nursing (BSN)</li>
+                        <li id="bachelor-music-therapy" data-related="music-therapist-mt-bc">Bachelor in Music Therapy
+                        </li>
+                        <li id="bachelor-mental-health-developmental-disabilities"
+                            data-related="psychiatric-technician-level-4-ncpt">
+                            Bachelor in Mental Health or Developmental Disabilities Field</li>
+                        <li id="bachelor-science-nursing-bsn-psychiatric"
+                            data-related="psychiatric-nurse-pmh-rn,mental-health-nurse-pmh-rn"
+                            data-alternative="associate-degree-nursing-adn-psychiatric">Bachelor in Nursing (BSN) with a
+                            Focus in Psychiatric Nursing</li>
+                        <li id="bachelor-any-field"
+                            data-related="counselor-trainee-ct,social-work-trainee-swt,marriage-family-therapist-trainee-mft-trainee,client-advocate-bcpa,ohio-certified-prevention-consultant-ocpc,">
+                            Bachelor in Any Field</li>
+                        <li id="bachelor-psychology" data-related="clinical-psychometrist"
+                            data-alternative="masters-psychology">
+                            Bachelor in Psychology</li>
+                    </ul>
+                </div>
             </div>
-        </div>
 
+            <div class="career-col-bachelors-row">
+                <div class="career">
+                    <ul class="column-split">
 
+                        <li id="behavioral-health-specialist"
+                            data-related="high-school-diploma-ged,bachelor-behavioral-science">
+                            Behavioral Health Specialist</li>
+                        <li id="licensed-social-worker-lsw"
+                            data-related="high-school-diploma-ged,bachelor-social-work-bsw,masters-social-work,doctorate-social-work">
+                            Licensed Social Worker (LSW)</li>
+                        <li id="qualified-mental-health-specialist-ii"
+                            data-related="high-school-diploma-ged,bachelor-behavioral-science">Qualified Mental Health
+                            Specialist
+                            II</li>
+                        <li id="chemical-dependency-specialist-cadc"
+                            data-related="high-school-diploma-ged,bachelor-behavioral-science">Chemical Dependency
+                            Specialist
+                            (CADC)</li>
+                        <li id="prevention-specialist-cps"
+                            data-related="high-school-diploma-ged,bachelor-behavioral-science">
+                            Prevention Specialist (CPS)</li>
+                        <li id="sud-case-manager-cps-cadc-ocps-ccs"
+                            data-related="high-school-diploma-ged,bachelor-behavioral-science">SUD Case Manager
+                            (CPS/CADC/OCPS/CCS)
+                        </li>
+                        <li id="case-manager-ccm" data-related="high-school-diploma-ged,bachelor-behavioral-science">
+                            Case
+                            Manager
+                            (CCM)</li>
+                        <li id="crisis-response-specialist"
+                            data-related="high-school-diploma-ged,bachelor-behavioral-science">
+                            Crisis Response Specialist</li>
+                        <li id="intake-specialist" data-related="high-school-diploma-ged,bachelor-behavioral-science">
+                            Intake
+                            Specialist</li>
+                        <li id="mental-health-case-manager" data-related="high-school-diploma-ged,bachelor-social-work-psychology-behavioral-science">
+                            Mental Health Case Manager</li>
+                        <li id="resiliency-care-manager"
+                            data-related="high-school-diploma-ged,bachelor-social-work-psychology-behavioral-science">
+                            Resiliency Care Manager</li>
+                        <li id="research-specialist" data-related="high-school-diploma-ged,bachelor-behavioral-science">
+                            Research
+                            Specialist</li>
+                        <li id="youth-case-manager" data-related="high-school-diploma-ged,bachelor-behavioral-science">
+                            Youth
+                            Case
+                            Manager</li>
+                        <li id="chemical-dependency-counselor-cadc"
+                            data-related="high-school-diploma-ged,bachelor-behavioral-science">Chemical Dependency
+                            Counselor
+                            (CADC)
+                        </li>
+                        <li id="counselor-trainee-ct" data-related="high-school-diploma-ged,bachelor-any-field">
+                            Counselor
+                            Trainee (CT)</li>
+                        <li id="sud-counselor-lcdc-iii"
+                            data-related="high-school-diploma-ged,bachelor-behavioral-science">
+                            SUD
+                            Counselor (LCDC III)</li>
+                        <li id="care-management-team-supervisor"
+                            data-related="high-school-diploma-ged,bachelor-behavioral-science">Care Management Team
+                            Supervisor</li>
+                        <li id="social-work-trainee-swt" data-related="high-school-diploma-ged,bachelor-any-field">
+                            Social
+                            Work Trainee (SWT)</li>
 
-        <!--  Associate degree row -->
-        <div class="edu-level-associate-degree"><b>Associate Degree</b></div>
-        <div class="certificate-col-associates-row">
-            <div class="credential">
-                <ul class="column-split">
-                    <li id="associate-human-services" data-related="professional,specialist"
-                        data-alternative="high-school-diploma-ged">Associate in Human Services
-                    </li>
-                    <li id="associate-behavioral-health-human-services" data-related="professional,specialist"
-                        data-alternative="high-school-diploma-ged">Associate
-                        in Behavioral Health or Human Services</li>
+                        <li id="registered-nurse-rn"
+                            data-related="high-school-diploma-ged,associate-degree-nursing-adn,bachelor-science-nursing-bsn,">
+                            Registered
+                            Nurse (RN)</li>
+                        <li id="psychiatric-nurse-pmh-rn"
+                            data-related="high-school-diploma-ged,associate-degree-nursing-adn-psychiatric,bachelor-science-nursing-bsn-psychiatric">
+                            Psychiatric Nurse (PMH-RN)</li>
+                        <li id="mental-health-nurse-pmh-rn"
+                            data-related="high-school-diploma-ged,associate-degree-nursing-adn-psychiatric,bachelor-science-nursing-bsn-psychiatric">
+                            Mental Health Nurse (PMH-RN)</li>
+                        <li id="sud-nurse-carn" data-related="high-school-diploma-ged,bachelor-science-nursing-bsn">SUD
+                            Nurse (CARN)
+                        </li>
+                        <li id="marriage-family-therapist-trainee-mft-trainee"
+                            data-related="high-school-diploma-ged,bachelor-any-field">
+                            Marriage and Family Therapist
+                            Trainee (MFT Trainee)</li>
+                        <li id="music-therapist-mt-bc" data-related="high-school-diploma-ged,bachelor-music-therapy">
+                            Music
+                            Therapist (MT-BC)</li>
+                        <li id="psychiatric-technician-level-4-ncpt"
+                            data-related="high-school-diploma-ged,bachelor-mental-health-developmental-disabilities">
+                            Psychiatric
+                            Technician Level 4
+                            (NCPT)</li>
+                        <li id="clinical-psychometrist" data-related="high-school-diploma-ged,bachelor-psychology,masters-psychology">
+                            Clinical
+                            Psychometrist</li>
+                        <li id="behavioral-health-case-manager"
+                            data-related="high-school-diploma-ged,bachelor-social-work-psychology-behavioral-science">
+                            Behavioral Health Case Manager</li>
+                        <li id="client-advocate-bcpa" data-related="high-school-diploma-ged,bachelor-any-field">Client
+                            Advocate (BCPA)</li>
+                        <li id="crisis-case-manager-lsw-lisw"
+                            data-related="high-school-diploma-ged,bachelor-social-work-bsw">
+                            Crisis Case Manager (LSW/LISW)</li>
+                        <li id="ohio-certified-prevention-consultant-ocpc"
+                            data-related="high-school-diploma-ged,bachelor-any-field">Ohio
+                            Certified Prevention Consultant
+                            (OCPC)</li>
+                        <li id="counselor-gambling-disorder-endorsement-gamb"
+                            data-related="high-school-diploma-ged,bachelor-behavioral-science">
+                            Counselor with Gambling Disorder
+                            Endorsement (GAMB)</li>
+                        <li id="certified-health-education-specialist-ches"
+                            data-related="high-school-diploma-ged,bachelor-behavioral-science">
+                            Certified Health Education
+                            Specialist (CHES)</li>
 
-                    <li id="associate-behavioral-science-nursing" data-related="professional,specialist">Associate in
-                        Behavioral Science or Nursing</li>
-                    <li id="associate-social-service-technology" data-related="professional,specialist">Associate in
-                        Social Service Technology</li>
-                    <li id="associate-any-field-30-semester-hours" data-related="professional,specialist">Associate in
-                        Any Field (30 Semester Hours)</li>
-                    <li id="associate-any-field-60-semester-hours" data-related="professional,specialist">Associate in
-                        Any Field (60 Semester Hours)</li>
-                    <li id="associate-medical-assisting" data-related="professional,specialist">Associate in Medical
-                        Assisting</li>
-
-                    <li id="associate-nursing" data-related="professional,specialist">Associate in Nursing</li>
-                    <li id="associate-degree-general" data-related="professional,specialist"
-                        data-alternative="high-school-diploma-ged">Associate Degree (General)</li>
-                    <li id="associate-degree-nursing-adn" data-related="professional,specialist"
-                        data-alternative="bachelor-science-nursing-bsn">Associate Degree in
-                        Nursing (ADN)</li>
-
-                    <li id="associate-behavioral-science" data-related="professional,specialist"
-                        data-alternative="bachelor-any-field,high-school-diploma-ged">Associate in Behavioral
-                        Science</li>
-                    <li id="associate-degree-nursing-adn-psychiatric" data-related="professional,specialist"
-                        data-alternative="bachelor-science-nursing-bsn-psychiatric">Associate
-                        Degree in Nursing (ADN) with a Focus in Psychiatric Nursing</li>
-                </ul>
+                    </ul>
+                </div>
             </div>
-        </div>
-        <div class="career-col-associates-row">
-            <div class="career">
-                <ul class="column-split">
-                    <li id="family-support-worker" data-related="high-school-diploma-ged,associate-behavioral-science">
-                        Family Support
-                        Worker</li>
-                    <li id="mental-health-technician"
-                        data-related="high-school-diploma-ged,associate-behavioral-health-human-services">Mental
-                        Health Technician</li>
-                    <li id="residential-specialist-prn" data-related="high-school-diploma-ged,associate-human-services">
-                        Residential Specialist (PRN)</li>
-                    <li id="crisis-hotline-responder"
-                        data-related="high-school-diploma-ged,associate-behavioral-science">Crisis
-                        Hotline Responder</li>
-                    <li id="sud-counselor-lcdc-ii"
-                        data-related="high-school-diploma-ged,associate-behavioral-science-nursing,bachelor-any-field"
-                        data-alternative="bachelor-any-field">SUD Counselor (LCDC II)</li>
-                    <li id="addiction-counselor-lcdc-ii"
-                        data-related="high-school-diploma-ged,associate-behavioral-science-nursing,bachelor-any-field">
-                        Addiction
-                        Counselor (LCDC II)</li>
-                    <li id="drug-and-alcohol-counselor-lcdc-ii"
-                        data-related="high-school-diploma-ged,associate-behavioral-science-nursing,bachelor-any-field">
-                        Drug and Alcohol Counselor (LCDC II)</li>
-                    <li id="social-work-assistant-swa"
-                        data-related="high-school-diploma-ged,associate-social-service-technology">Social Work
-                        Assistant (SWA)</li>
-                    <li id="psychiatric-technician-level-2-ncpt"
-                        data-related="high-school-diploma-ged,associate-any-field-30-semester-hours">
-                        Psychiatric Technician Level 2 (NCPT)</li>
-                    <li id="psychiatric-technician-level-3-ncpt"
-                        data-related="high-school-diploma-ged,associate-any-field-60-semester-hours">
-                        Psychiatric Technician Level 3 (NCPT)</li>
-                    <li id="patient-navigator-cma-ccma-rma"
-                        data-related="high-school-diploma-ged,associate-medical-assisting">
-                        Patient Navigator (CMA/CCMA/RMA)</li>
-                    <li id="ohio-certified-prevention-specialist-ocps"
-                        data-related="high-school-diploma-ged,associate-degree-general">Ohio Certified Prevention
-                        Specialist
-                        (OCPS)</li>
-                    <li id="licensed-practical-nurse-lpn" data-related="high-school-diploma-ged,associate-nursing">
-                        Licensed
-                        Practical Nurse (LPN)</li>
-                    <li id="ohio-infant-family-practitioner-level-ii-oifp-ii"
-                        data-related="high-school-diploma-ged,bachelor-behavioral-science">
-                        Ohio Infant Family Practitioner Level II
-                        (OIFP-II)</li>
-                </ul>
+
+
+
+            <!--  Associate degree row -->
+            <div class="edu-level-associate-degree"><b>Associate Degree</b></div>
+            <div class="certificate-col-associates-row">
+                <div class="credential">
+                    <ul class="column-split">
+                        <li id="associate-human-services" data-related="residential-specialist-prn"
+                            data-alternative="high-school-diploma-ged">Associate in Human Services
+                        </li>
+                        <li id="associate-behavioral-health-human-services" data-related="mental-health-technician"
+                            data-alternative="high-school-diploma-ged">Associate
+                            in Behavioral Health or Human Services</li>
+
+                        <li id="associate-behavioral-science-nursing"
+                            data-related="sud-counselor-lcdc-ii,addiction-counselor-lcdc-ii,drug-and-alcohol-counselor-lcdc-ii">
+                            Associate
+                            in Behavioral Science or Nursing</li>
+                        <li id="associate-social-service-technology" data-related="social-work-assistant-swa">Associate
+                            in
+                            Social Service Technology</li>
+                        <li id="associate-any-field-30-semester-hours"
+                            data-related="psychiatric-technician-level-2-ncpt">Associate
+                            in Any Field (30 Semester Hours)</li>
+                        <li id="associate-any-field-60-semester-hours"
+                            data-related="psychiatric-technician-level-3-ncpt">Associate
+                            in Any Field (60 Semester Hours)</li>
+                        <li id="associate-medical-assisting" data-related="patient-navigator-cma-ccma-rma">Associate in
+                            Medical
+                            Assisting</li>
+
+                        <li id="associate-nursing" data-related="licensed-practical-nurse-lpn">Associate in Nursing</li>
+                        <li id="associate-degree-general"
+                            data-related="ohio-certified-prevention-specialist-ocps,ohio-infant-family-affiliate-level-i"
+                            data-alternative="high-school-diploma-ged">Associate Degree (General)</li>
+                        <li id="associate-degree-nursing-adn" data-related=""
+                            data-alternative="">Associate Degree in
+                            Nursing (ADN)</li>
+
+                        <li id="associate-behavioral-science"
+                            data-related="family-support-worker,crisis-hotline-responder,care-coordinator"
+                            data-alternative="bachelor-any-field,high-school-diploma-ged">Associate in Behavioral
+                            Science</li>
+                        <li id="associate-degree-nursing-adn-psychiatric"
+                            data-related=""
+                            data-alternative="bachelor-science-nursing-bsn-psychiatric">Associate
+                            Degree in Nursing (ADN) with a Focus in Psychiatric Nursing</li>
+                    </ul>
+                </div>
             </div>
-        </div>
-
-        <!-- Training Program (Non-Degree) row -->
-        <div class="edu-level-certificate"><b>Training Program (Non-Degree) </b></div>
-        <div class="certificate-col-certificate-row">
-            <div class="credential">
-                <ul class="column-split">
-                    <li id="ptcb-recognized-pharmacy-technician-training"
-                        data-related="registered-pharmacy-technician,certified-pharmacy-technician">
-                        PTCB-recognized pharmacy technician training program</li>
-                    <li id="chw-training-program" data-related="community-health-worker">CHW Training Program</li>
-
-                </ul>
+            <div class="career-col-associates-row">
+                <div class="career">
+                    <ul class="column-split">
+                        <li id="family-support-worker"
+                            data-related="high-school-diploma-ged,associate-behavioral-science">
+                            Family Support
+                            Worker</li>
+                        <li id="mental-health-technician"
+                            data-related="high-school-diploma-ged,associate-behavioral-health-human-services">Mental
+                            Health Technician</li>
+                        <li id="residential-specialist-prn"
+                            data-related="high-school-diploma-ged,associate-human-services">
+                            Residential Specialist (PRN)</li>
+                        <li id="crisis-hotline-responder"
+                            data-related="high-school-diploma-ged,associate-behavioral-science">Crisis
+                            Hotline Responder</li>
+                        <li id="sud-counselor-lcdc-ii"
+                            data-related="high-school-diploma-ged,associate-behavioral-science-nursing,bachelor-any-field"
+                            data-alternative="bachelor-any-field">SUD Counselor (LCDC II)</li>
+                        <li id="addiction-counselor-lcdc-ii"
+                            data-related="high-school-diploma-ged,associate-behavioral-science-nursing,bachelor-any-field">
+                            Addiction
+                            Counselor (LCDC II)</li>
+                        <li id="drug-and-alcohol-counselor-lcdc-ii"
+                            data-related="high-school-diploma-ged,associate-behavioral-science-nursing,bachelor-any-field">
+                            Drug and Alcohol Counselor (LCDC II)</li>
+                        <li id="social-work-assistant-swa"
+                            data-related="high-school-diploma-ged,associate-social-service-technology">Social Work
+                            Assistant (SWA)</li>
+                        <li id="psychiatric-technician-level-2-ncpt"
+                            data-related="high-school-diploma-ged,associate-any-field-30-semester-hours">
+                            Psychiatric Technician Level 2 (NCPT)</li>
+                        <li id="psychiatric-technician-level-3-ncpt"
+                            data-related="high-school-diploma-ged,associate-any-field-60-semester-hours">
+                            Psychiatric Technician Level 3 (NCPT)</li>
+                        <li id="patient-navigator-cma-ccma-rma"
+                            data-related="high-school-diploma-ged,associate-medical-assisting">
+                            Patient Navigator (CMA/CCMA/RMA)</li>
+                        <li id="ohio-certified-prevention-specialist-ocps"
+                            data-related="high-school-diploma-ged,associate-degree-general">Ohio Certified Prevention
+                            Specialist
+                            (OCPS)</li>
+                        <li id="licensed-practical-nurse-lpn" data-related="high-school-diploma-ged,associate-nursing">
+                            Licensed
+                            Practical Nurse (LPN)</li>
+                        <li id="ohio-infant-family-practitioner-level-ii-oifp-ii"
+                            data-related="high-school-diploma-ged,bachelor-behavioral-science">
+                            Ohio Infant Family Practitioner Level II
+                            (OIFP-II)</li>
+                    </ul>
+                </div>
             </div>
-        </div>
 
-        <div class="career-col-certificate-row">
-            <div class="career">
-                <ul class="column-split">
+            <!-- Training Program (Non-Degree) row -->
+            <div class="edu-level-certificate"><b>Training Program (Non-Degree) </b></div>
+            <div class="certificate-col-certificate-row">
+                <div class="credential">
+                    <ul class="column-split">
+                        <li id="ptcb-recognized-pharmacy-technician-training"
+                            data-related="registered-pharmacy-technician,certified-pharmacy-technician">
+                            PTCB-recognized pharmacy technician training program</li>
+                        <li id="chw-training-program" data-related="community-health-worker">CHW Training Program</li>
 
-                    <li id="registered-pharmacy-technician"
-                        data-related="high-school-diploma-ged,ptcb-recognized-pharmacy-technician-training">Registered
-                        Pharmacy
-                        Technician</li>
-                    <li id="community-health-worker" data-related="high-school-diploma-ged,chw-training-program">
-                        Community Health Worker
-                        (CHW)</li>
-                    <li id="certified-pharmacy-technician"
-                        data-related="high-school-diploma-ged,ptcb-recognized-pharmacy-technician-training">Certified
-                        Pharmacy
-                        Technician (CPhT)</li>
-                </ul>
+                    </ul>
+                </div>
             </div>
-        </div>
 
-        <!--High School / GED row   -->
+            <div class="career-col-certificate-row">
+                <div class="career">
+                    <ul class="column-split">
 
-        <div class="edu-level-high-school"><b>High School / GED</b></div>
-        <div class="certificate-col-highschool-row">
-            <div class="credential">
-                <ul class="column-split">
-                    <li id="high-school-diploma-ged"
-                        data-related="sud-counseling-assistant,addiction-support-specialist,program-aide,certified-peer-support-specialist,certified-peer-recovery-coach,certified-youth-peer-support-specialist,certified-family-peer-support-specialist,qualified-behavioral-health-specialist,qualified-mental-health-specialist-i,psychiatric-technician-level-1,mental-health-aide,behavioral-health-aide,ohio-certified-prevention-specialist-assistant,certified-nursing-assistant,ohio-infant-family-affiliate-level-i,care-coordinator"
-                        data-alternative="edd-counseling-psychology,associate-degree-general,associate-behavioral-science,associate-behavioral-health-human-services,associate-human-services">
-                        High School / GED</li>
-                </ul>
+                        <li id="registered-pharmacy-technician"
+                            data-related="high-school-diploma-ged,ptcb-recognized-pharmacy-technician-training">
+                            Registered
+                            Pharmacy
+                            Technician</li>
+                        <li id="community-health-worker" data-related="high-school-diploma-ged,chw-training-program">
+                            Community Health Worker
+                            (CHW)</li>
+                        <li id="certified-pharmacy-technician"
+                            data-related="high-school-diploma-ged,ptcb-recognized-pharmacy-technician-training">
+                            Certified
+                            Pharmacy
+                            Technician (CPhT)</li>
+                    </ul>
+                </div>
             </div>
-        </div>
 
-        <div class="career-col-highschool-row">
-            <div class="career">
-                <ul class="column-split">
-                    <li id="ohio-infant-family-affiliate-level-i"
-                        data-related="high-school-diploma-ged,associate-degree-general,">Ohio Infant
-                        Family Affiliate Level 1</li>
-                    <li id="sud-counseling-assistant" data-related="high-school-diploma-ged">SUD Counseling Assistant
-                        (CDCA)</li>
-                    <li id="care-coordinator" data-related="high-school-diploma-ged,associate-behavioral-science">Care
-                        Coordinator</li>
-                    <li id="addiction-support-specialist" data-related="high-school-diploma-ged">Addiction Support
-                        Specialist (CASS)</li>
-                    <li id="program-aide" data-related="high-school-diploma-ged">Program Aide</li>
-                    <li id="certified-peer-support-specialist" data-related="high-school-diploma-ged">Certified Peer
-                        Support Specialist (CPSS)</li>
-                    <li id="certified-peer-recovery-coach" data-related="high-school-diploma-ged">Certified Peer
-                        Recovery Coach (CPRS)</li>
-                    <li id="certified-youth-peer-support-specialist" data-related="high-school-diploma-ged">Certified
-                        Youth Peer Support Specialist</li>
-                    <li id="certified-family-peer-support-specialist" data-related="high-school-diploma-ged">Certified
-                        Family Peer Support Specialist</li>
-                    <li id="qualified-behavioral-health-specialist" data-related="high-school-diploma-ged">Qualified
-                        Behavioral Health Specialist</li>
-                    <li id="qualified-mental-health-specialist-i" data-related="high-school-diploma-ged">Qualified
-                        Mental Health Specialist I</li>
-                    <li id="psychiatric-technician-level-1" data-related="high-school-diploma-ged">Psychiatric
-                        Technician Level 1 (NCPT)</li>
-                    <li id="mental-health-aide" data-related="high-school-diploma-ged">Mental Health Aide (NCPT)</li>
-                    <li id="behavioral-health-aide" data-related="high-school-diploma-ged">Behavioral Health Aide (NCPT)
-                    </li>
-                    <li id="ohio-certified-prevention-specialist-assistant" data-related="high-school-diploma-ged">Ohio
-                        Certified Prevention Specialist Assistant</li>
-                    <li id="certified-nursing-assistant" data-related="high-school-diploma-ged">Certified Nursing
-                        Assistant (CNA)</li>
+            <!--High School / GED row   -->
+
+            <div class="edu-level-high-school"><b>High School / GED</b></div>
+            <div class="certificate-col-highschool-row">
+                <div class="credential">
+                    <ul class="column-split">
+                        <li id="high-school-diploma-ged"
+                            data-related="sud-counseling-assistant,addiction-support-specialist,program-aide,certified-peer-support-specialist,certified-peer-recovery-coach,certified-youth-peer-support-specialist,certified-family-peer-support-specialist,qualified-behavioral-health-specialist,qualified-mental-health-specialist-i,psychiatric-technician-level-1,mental-health-aide,behavioral-health-aide,ohio-certified-prevention-specialist-assistant,certified-nursing-assistant,ohio-infant-family-affiliate-level-i,care-coordinator"
+                            data-alternative="edd-counseling-psychology,associate-degree-general,associate-behavioral-science,associate-behavioral-health-human-services,associate-human-services">
+                            High School / GED</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="career-col-highschool-row">
+                <div class="career">
+                    <ul class="column-split">
+                        <li id="ohio-infant-family-affiliate-level-i"
+                            data-related="high-school-diploma-ged,associate-degree-general,">Ohio Infant
+                            Family Affiliate Level 1</li>
+                        <li id="sud-counseling-assistant" data-related="high-school-diploma-ged">SUD Counseling
+                            Assistant
+                            (CDCA)</li>
+                        <li id="care-coordinator" data-related="high-school-diploma-ged,associate-behavioral-science">
+                            Care
+                            Coordinator</li>
+                        <li id="addiction-support-specialist" data-related="high-school-diploma-ged">Addiction Support
+                            Specialist (CASS)</li>
+                        <li id="program-aide" data-related="high-school-diploma-ged">Program Aide</li>
+                        <li id="certified-peer-support-specialist" data-related="high-school-diploma-ged">Certified Peer
+                            Support Specialist (CPSS)</li>
+                        <li id="certified-peer-recovery-coach" data-related="high-school-diploma-ged">Certified Peer
+                            Recovery Coach (CPRS)</li>
+                        <li id="certified-youth-peer-support-specialist" data-related="high-school-diploma-ged">
+                            Certified
+                            Youth Peer Support Specialist</li>
+                        <li id="certified-family-peer-support-specialist" data-related="high-school-diploma-ged">
+                            Certified
+                            Family Peer Support Specialist</li>
+                        <li id="qualified-behavioral-health-specialist" data-related="high-school-diploma-ged">Qualified
+                            Behavioral Health Specialist</li>
+                        <li id="qualified-mental-health-specialist-i" data-related="high-school-diploma-ged">Qualified
+                            Mental Health Specialist I</li>
+                        <li id="psychiatric-technician-level-1" data-related="high-school-diploma-ged">Psychiatric
+                            Technician Level 1 (NCPT)</li>
+                        <li id="mental-health-aide" data-related="high-school-diploma-ged">Mental Health Aide (NCPT)
+                        </li>
+                        <li id="behavioral-health-aide" data-related="high-school-diploma-ged">Behavioral Health Aide
+                            (NCPT)
+                        </li>
+                        <li id="ohio-certified-prevention-specialist-assistant" data-related="high-school-diploma-ged">
+                            Ohio
+                            Certified Prevention Specialist Assistant</li>
+                        <li id="certified-nursing-assistant" data-related="high-school-diploma-ged">Certified Nursing
+                            Assistant (CNA)</li>
 
 
-                </ul>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
     <script src="scripts.js" type="module"></script>
     <svg id="arrows" aria-hidden="true"></svg>
+
+    <!-- google translate portion start here  -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'en,es,fr,de,zh-CN,ja,ne,ar,hi,pt,ru,it,ko,nl,pl,sv,tr,uk,vi',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <!-- google translate portion end here -->
 
 </body>
 
