@@ -3,43 +3,148 @@ body {
     font-family: "Raleway", sans-serif, Helvetica, Arial, sans-serif;
     font-size: 15px;
 }
-/* google translate */
-#google_translate_element {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    z-index: 1000;
+
+
+/* Language related */
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    max-width: 1200px; /* Match the max-width of three-columns-grid */
+    margin: 0 auto; /* Center the container */
+}
+
+/* Language selection */
+.language-selection {
+    margin-bottom: 10px;
+    /* Space between language selection box and table */
+}
+
+/* Hide Google Translate popups */
 .goog-te-banner-frame.skiptranslate {
     display: none !important;
 }
 
-/* Hide the Google Translate toolbar */
-body {
-    top: 0px !important;
+.VIpgJd-yAWNEb-hvhgNd {
+    display: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
 }
 
-/* Hide the Google Translate logo */
-.goog-logo-link {
+.VIpgJd-suEOdc.VIpgJd-yAWNEb-L7lbkb.skiptranslate {
+    display: none !important;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+/* Ensure the specific element is always hidden */
+#goog-gt-tt.VIpgJd-suEOdc.VIpgJd-yAWNEb-L7lbkb.skiptranslate {
     display: none !important;
 }
 
-/* Hide the Google Translate branding */
-.goog-te-gadget {
-    color: transparent !important;
+.VIpgJd-yAWNEb-VIpgJd-fmcmS-sn54Q:hover {
+    background-color: inherit !important;
+    text-decoration: none !important;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    color: inherit !important;
+    cursor: default !important;
 }
-/* google translate end */
 
+#google_translate_element {
+    display: inline-block;
+    width: 100%;
+    max-width: 200px;
+    /* Adjust to your preference */
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: right;
+    /* Align to the right */
+    position: relative;
+}
 
+.goog-te-gadget-simple {
+    color: white !important;
+    /* White text */
+    border: none !important;
+    padding: 10px !important;
+    border-radius: 8px !important;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
+    transition: background-color 0.3s ease;
+}
+
+.goog-te-gadget-simple:hover {
+    background-color: #e8f0fe !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+    transform: translateY(-2px);
+}
+
+.goog-te-menu-value {
+    color: #2c3e50 !important;
+    font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+}
+
+.goog-te-menu-value span {
+    color: white !important;
+    font-weight: 500;
+    font-size: 14px !important;
+}
+
+.goog-te-menu-value span:after {
+    content: "\25BC";
+    /* Custom dropdown arrow */
+    margin-left: 10px;
+}
+
+.goog-te-menu-value:hover {
+    text-decoration: none !important;
+}
+
+.goog-te-menu-value span {
+    border-left: none !important;
+    font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+}
+
+.goog-te-menu-frame {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2) !important;
+    border-radius: 8px !important;
+}
+
+.goog-te-banner-frame.skiptranslate {
+    display: none !important;
+}
+
+/* Language related end */
 
 /* container */
 .three-columns-grid {
     display: grid;
     max-width: 1200px;
-    margin: auto;
+    margin: 0 auto;
+    width: 100%;
     grid-template-columns: 20% 1fr 1fr;
     position: relative;
     margin-bottom: 2rem;
+    padding:5px;
 }
 
 /* container end */
@@ -297,6 +402,12 @@ body {
     /* width: 100%; */
     /* pointer-events: none; */
 }
+.credential{
+    margin-right: 5px;
+}
+.career{
+    margin-left: 5px;
+}
 
 /* Remove list-style and add styling for credential and career items */
 .credential ul,
@@ -370,7 +481,7 @@ body {
 
 /* Disabled state */
 .disabled {
-    opacity: 0.1;
+    opacity: 0.4;
     pointer-events: none;
 }
 
@@ -402,9 +513,17 @@ body {
     width: auto;
     /* Allow auto width to adjust */
     max-width: 100%;
+     word-wrap: break-word; /* Ensure long words wrap */
     /* Ensure it doesn't overflow the screen */
     z-index: 10;
 }
+
+.popup-content {
+    overflow: auto; /* Add scroll if content overflows */
+    padding: 2px; /* Add some padding inside the content */
+}
+
+
 
 .popup h5 {
     font-size: 14px;
