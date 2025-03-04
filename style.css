@@ -481,7 +481,7 @@ body {
 
 /* Disabled state */
 .disabled {
-    opacity: 0.4;
+    opacity: 0.1;
     pointer-events: none;
 }
 
