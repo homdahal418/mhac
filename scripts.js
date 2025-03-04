@@ -1,8 +1,51 @@
 // scripts.js
 import { popupContent } from './popupData.js';
 
+let isLanguageChanged = false;
+
+// Function to detect language changes
+function setupLanguageChangeDetection() {
+    const observer = new MutationObserver((mutations) => {
+        for (const mutation of mutations) {
+            if (mutation.type === 'attributes' && mutation.attributeName === 'lang') {
+                isLanguageChanged = true;
+                scrollPageQuickly(); // Trigger the scroll behavior
+                break;
+            }
+        }
+    });
+
+    // Observe the <html> element for changes to the 'lang' attribute
+    const htmlElement = document.documentElement;
+    observer.observe(htmlElement, { 
+        attributes: true, // Observe attribute changes
+        attributeFilter: ['lang'] // Only observe changes to the 'lang' attribute
+    });
+}
+
+// Function to scroll the page to the bottom and then back to the top
+function scrollPageQuickly() {
+    // Check if the device is mobile
+    const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+    // Scroll to the bottom of the page
+    window.scrollTo({
+        top: document.body.scrollHeight,
+        behavior: isMobile ? 'auto' : 'smooth' // Use 'auto' for mobile, 'smooth' for desktop
+    });
+
+    // After a short delay, scroll back to the top
+    setTimeout(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: isMobile ? 'auto' : 'smooth' // Use 'auto' for mobile, 'smooth' for desktop
+        });
+    }, 500); // Adjust the delay (in milliseconds) as needed
+}
+
 
 document.addEventListener("DOMContentLoaded", () => {
+    setupLanguageChangeDetection();
     const credentials = document.querySelectorAll(".credential li");
     const careers = document.querySelectorAll(".career li");
     let lastClickedElement = null; // Track the last clicked element
@@ -37,6 +80,8 @@ document.addEventListener("DOMContentLoaded", () => {
     careers.forEach((element) => {
         element.addEventListener("click", handleClick);
     });
+
+    
 
     // Create popup on click
     function createPopup(element) {
